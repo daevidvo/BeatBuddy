@@ -11,8 +11,10 @@
     <link rel="stylesheet" src="./assets/css/style.css">
     <title>BeatBuddy &#127926;</title>
 </head>
-<body > 
-    <!-- style="background-image: linear-gradient(-40deg, rgba(94,92,199,1) 0%, rgba(154,212,255,1) 100%)" -->
+
+<!-- style="background-image: linear-gradient(-40deg, rgba(94,92,199,1) 0%, rgba(154,212,255,1) 100%)" -->
+
+<body> 
 
     <div class="header header-fixed u-unselectable header-animated">
 
@@ -49,17 +51,99 @@
 
     <div id="splash-img" style="background-image: url(&quot;./assets/images/beatbuddylogo.jpg&quot;);" class="hero fullscreen hero-img parallax-img header-brand">
 
-        <div class="hero-body">
+        <div class="hero-body mb-32 pb-32">
             <div class="content u-text-center">
-                <h1 class="uppercase text-white title">Welcome to beatbuddy</h1>
-                <h3 class="uppercase text-white sub-title u-opacity-70">click below to get started</h3>
-                <button class="text-white bg-gray-500 btn--xl btn-transparent">Start</button>
+                <h1 class="uppercase text-black title">Welcome to beatbuddy</h1>
+                <h3 class="uppercase text-black sub-title u-opacity-70">click below to get started</h3>
+                <a href="#basic-modal"><button class="text-white bg-gray-500 btn--xl btn-transparent">Start</button></a>
             </div>
         </div>
 
     </div>
 
-    <div class="row w-40p mx-auto u-flex-nowrap">
+    <div class="modal modal-animated--zoom-in" id="basic-modal">
+        <a href="#searchModalDialog" class="modal-overlay close-btn" aria-label="Close"></a>
+        <div class="modal-content" role="document">
+            <div class="modal-header"><a href="#components" class="u-pull-right" aria-label="Close"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 fa-wrapper" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span></a>
+                <div class="modal-title text-xl">Genre Picker</div>
+            </div>
+            <div class="modal-body">
+                <div class="r">
+                    <h3 class="font-alt font-light u-text-center">What Do You Usually Listen To?</h3></div>
+                <div class="divider"></div>
+                <div class="my-1">
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>Hip-hop/Rap</span>
+                            <div class="form-ext-toggle form-ext-toggle--dark">
+                                <input name="toggleCheckbox-hipHopRap" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>Rock</span>
+                            <div class="form-ext-toggle form-ext-toggle--primary">
+                                <input name="toggleCheckbox-rock" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>Lofi</span>
+                            <div class="form-ext-toggle form-ext-toggle--link">
+                                <input name="toggleCheckbox-lofi" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>Pop</span>
+                            <div class="form-ext-toggle form-ext-toggle--info">
+                                <input name="toggleCheckbox-pop" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>R&B</span>
+                            <div class="form-ext-toggle form-ext-toggle--success">
+                                <input name="toggleCheckbox-rnb" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>EDM</span>
+                            <div class="form-ext-toggle form-ext-toggle--warning">
+                                <input name="toggleCheckbox-edm" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-ext-control">
+                        <label class="form-ext-toggle__label"><span>Country</span>
+                            <div class="form-ext-toggle form-ext-toggle--danger">
+                                <input name="toggleCheckbox-country" type="checkbox" class="form-ext-input" />
+                                <div class="form-ext-toggle__toggler"><i></i></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-section u-text-right">
+                    <a href="#components">
+                        <button class="btn btn--sm u-inline-block">Cancel</button>
+                    </a>
+                    <a href="#components">
+                        <button class="btn-info btn--sm u-inline-block">Confirm</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="row w-40p mx-auto u-flex-nowrap">
         <div class="form-ext-control form-ext-checkbox offset-center">
             <input id="check1" class="form-ext-input" type="checkbox">
             <label class="form-ext-label" for="check1">1</label>
@@ -100,8 +184,8 @@
             <input id="check10" class="form-ext-input" type="checkbox"/>
             <label class="form-ext-label" for="check10">10</label>
         </div>
-</div>  
-    
+    </div>  
+     -->
 </body>
 <script src="./assets/js/index.js"></script>
 </html>
