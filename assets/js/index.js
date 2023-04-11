@@ -1,13 +1,32 @@
 //DAVID'S SECTION
 
+function genreToggleChecker(){
+    var hipHopRapToggle = document.getElementsByName('toggleCheckbox-hipHopRap')[0].checked
+    var rockToggle = document.getElementsByName('toggleCheckbox-rock')[0].checked
+    var lofiToggle = document.getElementsByName('toggleCheckbox-lofi')[0].checked
+    var popToggle = document.getElementsByName('toggleCheckbox-pop')[0].checked
+    var rnbToggle = document.getElementsByName('toggleCheckbox-rnb')[0].checked
+    var edmToggle = document.getElementsByName('toggleCheckbox-edm')[0].checked
+    var countryToggle = document.getElementsByName('toggleCheckbox-country')[0].checked
 
+    var genreArray = [{hipHopRap: hipHopRapToggle,rock: rockToggle,lofi: lofiToggle,pop: popToggle,rnb: rnbToggle,edm: edmToggle,country: countryToggle}]
 
+    for(const property in genreArray[0]){
+        if (`${genreArray[0][property]}`)
+        console.log(`${property}: ${genreArray[0][property]}`)
+    }
 
 
+    // for(let x=0;x<genreArray.length;x=x+1){
 
+    // }
 
+    return beatsQuerier(genreArray);
+}
 
+function beatsQuerier(hipHopRap, rock, lofi, pop, rnb, edm, country){
 
+}
 
 
 
@@ -91,6 +110,12 @@
 
 
 
+
+
+
+
+
+document.querySelector('#genreConfirmButton').addEventListener('click', genreToggleChecker)
 
 
 
