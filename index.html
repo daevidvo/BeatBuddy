@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" src="./assets/css/style.css">
     <title>Cheerio &#129303;</title>
 </head>
@@ -52,9 +53,9 @@
         <div class="hero-body">
             <div class="content u-text-center">
 
-                <h1 id="heroFirstLine" class="uppercase text-black title">Welcome to beatbuddy</h1>
+                <h1 id="heroFirstLine" class="uppercase text-black title">Welcome to Cheerio</h1>
                 <h3 id="heroSecondLine" class="uppercase text-black sub-title u-opacity-70">click below to get started</h3>
-                <a href="#basic-modal"><button class="text-white bg-gray-500 btn--xl btn-transparent">Start</button></a>
+                <a href="#basic-modal"><button class="text-white bg-gray-500 btn--xl btn-transparent hover-grow" id="startButton">Start</button></a>
             </div>
         </div>
     </div>
@@ -123,11 +124,6 @@
                 </div>
             </div>
             
-        </div>
-        <div class="imageContainer">
-            <a id="imageLink" href="#">
-              <img alt="" id="unsplashImage" />
-            </a>
         </div>
     </div>
 
