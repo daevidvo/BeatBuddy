@@ -24,13 +24,18 @@ function beatsQuerier(newFeelingsArray){
 }
 
 // https://api.unsplash.com/photos/random/?query={QUERYSTRING}&per_page=1&client_id=5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c
+function quotesChanger(){
+    fetch('https://stoic-quotes.com/api/quote')
+    .then(function(r){
+        return r.json();
+    })
+    .then(function(data){
+        console.log(data)
+        document.querySelector('#heroFirstLine').textContent = data.text
+        document.querySelector('#heroSecondLine').textContent = data.author
+    })
+}
 
-// fetch('https://api.themotivate365.com/stoic-quote', {
-//     mode:"no-cors"
-// })
-// .then(function(response){
-//     console.log(response)
-// })
 
 
 
