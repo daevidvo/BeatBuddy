@@ -120,7 +120,7 @@ document.querySelector('#genreConfirmButton').addEventListener('click', feelings
 
 
 //BRYAN'S SECTION
-function getUnsplash(){
+function getUnsplash(variablemood){
   let clientID = "5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c";
   let endpoint = "https://api.unsplash.com/photos/random/?query=" + variablemood + "&client_id=" + clientID;
 
