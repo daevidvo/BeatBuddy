@@ -21,6 +21,7 @@ function feelingsToggleChecker(){
 function beatsQuerier(newFeelingsArray){
     var variablemood = newFeelingsArray[(Math.floor(Math.random() * newFeelingsArray.length))]
     getUnsplash(variablemood)
+    quotesChanger();
 }
 
 // https://api.unsplash.com/photos/random/?query={QUERYSTRING}&per_page=1&client_id=5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c
@@ -30,9 +31,9 @@ function quotesChanger(){
         return r.json();
     })
     .then(function(data){
-        console.log(data)
         document.querySelector('#heroFirstLine').textContent = data.text
-        document.querySelector('#heroSecondLine').textContent = data.author
+        document.querySelector('#heroSecondLine').textContent = "- " + data.author
+        document.querySelector('#startButton').textContent = "Again?"
     })
 }
 
