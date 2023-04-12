@@ -141,6 +141,48 @@ function getUnsplash(variablemood){
     })
 }
 
+document.addEventListener('DOMContentLoaded',function(){
+    document.getElementById("genreConfirmButton").addEventListener('click',function(){
+        moodStorage();
+    })
+})
+
+    var mood0 = document.getElementById("happy");
+    var mood1 = document.getElementById("calm");
+    var mood2 = document.getElementById("relaxed");
+    var mood3 = document.getElementById("energetic");
+    var mood4 = document.getElementById("optimistic");
+
+    console.log(document.getElementById("happy").checked);
+    console.log(mood0.checked);
+
+function moodStorage() {
+    localStorage.setItem("happy", mood0.checked);
+    localStorage.setItem("calm", mood1.checked);
+    localStorage.setItem("relaxed", mood2.checked);
+    localStorage.setItem("energetic", mood3.checked);
+    localStorage.setItem("optimistic", mood4.checked);
+}
+mood0.checked = true;
+console.log(mood0.checked);
+
+$(window).ready(function(){
+    if(localStorage){
+        /*
+        localStorage.getItem("happy");
+        localStorage.getItem("calm");
+        localStorage.getItem("relaxed");
+        localStorage.getItem("energetic");
+        localStorage.getItem("optimistic");
+        */
+
+        for (i=0;i<localStorage.length;i++){
+            if(localStorage.getItem(localStorage.key(i))){
+                console.log(`${mood}${i}`.checked);
+            }
+        }
+    }
+})
  
 
   
