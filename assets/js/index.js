@@ -118,6 +118,7 @@ function quotesChanger(){
 
 
 
+
 document.querySelector('#genreConfirmButton').addEventListener('click', feelingsToggleChecker)
 
 
@@ -270,15 +271,6 @@ function moodStorage() {
 
 
 // KENNETH START THE UNSPLASH API
-
-
-
-
-
-
-
-
-
 
 
 
