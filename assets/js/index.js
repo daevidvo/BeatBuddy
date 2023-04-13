@@ -14,10 +14,10 @@ function feelingsToggleChecker(){
             newFeelingsArray.unshift(`${property}`)
         }
     }
-    beatsQuerier(newFeelingsArray)
+    feelingsQuerier(newFeelingsArray)
 }
 
-function beatsQuerier(newFeelingsArray){
+function feelingsQuerier(newFeelingsArray){
     var variablemood = newFeelingsArray[(Math.floor(Math.random() * newFeelingsArray.length))]
     getUnsplash(variablemood)
     quotesChanger();
