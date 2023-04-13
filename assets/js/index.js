@@ -24,7 +24,10 @@ function beatsQuerier(newFeelingsArray){
     quotesChanger();
 }
 
+<<<<<<< HEAD
 // https://api.unsplash.com/photos/random/?query={QUERYSTRING}&per_page=1&client_id=5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c
+=======
+>>>>>>> fa8dd1c5844985a78d677aef844f035a709b67fb
 function quotesChanger(){
     fetch('https://stoic-quotes.com/api/quote')
     .then(function(r){
@@ -37,6 +40,7 @@ function quotesChanger(){
     })
 }
 
+<<<<<<< HEAD
 
 
 
@@ -126,6 +130,10 @@ document.querySelector('#genreConfirmButton').addEventListener('click', feelings
 
 
 //BRYAN'S SECTION
+=======
+document.querySelector('#genreConfirmButton').addEventListener('click', feelingsToggleChecker)
+
+>>>>>>> fa8dd1c5844985a78d677aef844f035a709b67fb
 function getUnsplash(variablemood){
   let clientID = "5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c";
   let endpoint = "https://api.unsplash.com/photos/random/?query=" + variablemood + "&client_id=" + clientID;
@@ -165,6 +173,7 @@ function moodStorage() {
         localStorage.setItem(key, value);
     }
 }
+<<<<<<< HEAD
  
 
   
@@ -385,3 +394,13 @@ function moodStorage() {
 
 
 
+=======
+
+anime({
+    targets: '#startContent',
+    scale: [0.9, 1],
+    easing: 'easeInOutQuad',
+    opacity: [0, 1],
+    duration: 1000
+});
+>>>>>>> fa8dd1c5844985a78d677aef844f035a709b67fb
