@@ -6,21 +6,48 @@
 
 ## Code Learning Points
 
-* Using third-party CSS frameworks allowed us to really get started on our MVP
+* Using third-party CSS frameworks allowed us to really get started on our MVP. Through utilizing Cirrus as our CSS framework and parsing through the documentation, we were able to create dynamic and stylish elements in our HTML without the need for external or custom CSS. This was a choice made by our team because we liked the built-in look that came with Cirrus. 
 
 ```html 
+        <div class="header-nav" id="header-menu"> <!--navbar on desktop-->
+            <div class="nav-right">
+                <div class="nav-item text-center">
+                    <a href="https://github.com/daevidvo/Cheerio"> <!--github repo link-->
+                        <span class="icon">
+                            <i class="fab fa-wrapper fa-github" aria-hidden="true"></i> <!--github icon from font awesome-->
+                        </span>
+                    </a>
+                </div>
 
-```
-* 
-
-```css
-
+                <div class="nav-item has-sub toggle-hover" id="dropdown"> <!--dropdown menu for navbar-->
+                    <a class="nav-dropdown-link">More Links</a>
+                    <ul class="dropdown-menu dropdown-animated" role="menu"> <!--navbar animation from cirrus-->
+                        <li role="menu-item"><a href="./aboutus.html">About Us</a></li>
+                        <li role="menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs">Surprise :)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 ```
  
-* 
+* A vital part to the functionality of Cheerio is the usage of server-side API calls and utilizing third-party information to help in the creation of our application. Below, you can see an example of a function that executes an API call. Through utilizing the variablemood variable, we were able to get a random picture based on the user's mood and change the wallpaper of the site accordingly.
 
 ```JavaScript
+//Unsplash API Call
+function getUnsplash(variablemood){
+  let clientID = "5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c";
+  let endpoint = "https://api.unsplash.com/photos/random/?query=" + variablemood + "&client_id=" + clientID;
 
+  let imageEl = document.querySelector("#splash-img");
+//fetch function
+  fetch(endpoint)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function(jsonData) {
+      imageEl.setAttribute('style', `background-image: url(${jsonData.urls.regular})`)
+    })
+}
 ```
 
 
@@ -44,7 +71,7 @@
 
 - Google Chrome
 - Safari
-- OPera
+- Opera
 - Mozilla Firefox
 - Internet Explorer
 
