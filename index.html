@@ -15,30 +15,34 @@
 
 <body> 
 
-    <div class="header header-fixed u-unselectable header-animated">
+    <div class="header header-fixed u-unselectable header-animated"> <!--entire header-->
 
         <div class="header-brand">
             <div class="nav-item no-hover">
                 <a href="https://daevidvo.github.io/Cheerio/"><h6 class="title">Cheerio &#129303;</h6></a>
             </div>
-            <div class="nav-item nav-btn" id="header-btn">
-                <span></span>
+            <div class="nav-item nav-btn" id="header-btn"> <!--nav bar on mobile-->
+                <a href="./aboutus.html"> 
+                    <span></span> <!--nav bar hamburger-->
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
         </div>
 
-        <div class="header-nav" id="header-menu">
+        <div class="header-nav" id="header-menu"> <!--navbar on desktop-->
             <div class="nav-right">
                 <div class="nav-item text-center">
-                    <a href="https://github.com/daevidvo/Cheerio">
+                    <a href="https://github.com/daevidvo/Cheerio"> <!--github repo link-->
                         <span class="icon">
-                            <i class="fab fa-wrapper fa-github" aria-hidden="true"></i>
+                            <i class="fab fa-wrapper fa-github" aria-hidden="true"></i> <!--github icon from font awesome-->
                         </span>
                     </a>
                 </div>
 
-                <div class="nav-item has-sub toggle-hover" id="dropdown">
+                <div class="nav-item has-sub toggle-hover" id="dropdown"> <!--dropdown menu for navbar-->
                     <a class="nav-dropdown-link">More Links</a>
-                    <ul class="dropdown-menu dropdown-animated" role="menu">
+                    <ul class="dropdown-menu dropdown-animated" role="menu"> <!--navbar animation from cirrus-->
                         <li role="menu-item"><a href="./aboutus.html">About Us</a></li>
                         <li role="menu-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs">Surprise :)</a></li>
                     </ul>
@@ -48,19 +52,19 @@
 
     </div>
 
-    <div id="splash-img" style="background-image: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);" class="hero fullscreen hero-img parallax-img ">
+    <div id="splash-img" style="background-image: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);" class="hero fullscreen hero-img parallax-img "> <!--makes the entire hero portion of the page take up the entire screen-->
         <div class="hero-body">
             <div class="content u-text-center">
-                <div id="startContent">
+                <div id="startContent"> <!--id selector for when we change first line and second line with quote information-->
                     <h1 id="heroFirstLine" class="uppercase text-white title">Welcome to Cheerio</h1>
                     <h3 id="heroSecondLine" class="uppercase text-white sub-title u-opacity-70">click below to get started</h3>
-                    <a href="#basic-modal"><button class="text-white bg-gray-500 btn--xl btn-transparent" id="startButton">Start</button></a>
+                    <a href="#basic-modal"><button class="text-white bg-gray-500 btn--xl btn-transparent" id="startButton">Start</button></a> <!--button that pops up the modal-->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal modal-animated--zoom-in" id="basic-modal">
+    <div class="modal modal-animated--zoom-in" id="basic-modal"> <!--feelings modal-->
         <a href="#searchModalDialog" class="modal-overlay close-btn" aria-label="Close"></a>
         <div class="modal-content" role="document">
             <div class="modal-header"><a href="#components" class="u-pull-right" aria-label="Close"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 fa-wrapper" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span></a>
@@ -72,10 +76,10 @@
                 <div class="divider"></div>
                 <div class="my-1">
                     <div class="form-ext-control">
-                        <label class="form-ext-toggle__label"><span>Happy</span>
+                        <label class="form-ext-toggle__label"><span>Happy</span> <!--feelings option-->
                             <div class="form-ext-toggle form-ext-toggle--dark">
-                                <input name="toggleCheckbox-Happy" id="happy" type="checkbox" class="form-ext-input" />
-                                <div class="form-ext-toggle__toggler"><i></i></div>
+                                <input name="toggleCheckbox-Happy" id="happy" type="checkbox" class="form-ext-input" /> <!--feelings checkbox-->
+                                <div class="form-ext-toggle__toggler"><i></i></div> <!--toggle icon for the feelings that displays instead of the checkbox-->
                             </div>
                         </label>
                     </div>
@@ -119,7 +123,7 @@
                         <button class="btn btn--sm u-inline-block">Cancel</button>
                     </a>
                     <a href="#components">
-                        <button class="btn-info btn--sm u-inline-block" id="genreConfirmButton">Confirm</button>
+                        <button class="btn-info btn--sm u-inline-block" id="genreConfirmButton">Confirm</button> <!--button that we use to operate the index.js functions-->
                     </a>
                 </div>
             </div>
