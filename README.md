@@ -44,18 +44,6 @@ Click the link below to visit our live site:
 
 
 
-## **Prerequisites**
-
-**Install or open the internet browser of your choice.**
-
-*  **Examples Below:**
-
-- Google Chrome
-- Safari
-- OPera
-- Mozilla Firefox
-- Internet Explorer
-
 ## **Usage**
 
 Click the link below to visit our live site: 
