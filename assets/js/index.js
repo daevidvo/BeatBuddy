@@ -37,12 +37,13 @@ function quotesChanger(){ //function for calling random quotes from stoic api
 
 document.querySelector('#genreConfirmButton').addEventListener('click', feelingsToggleChecker)//event listener to start the feelings checker along with the stoic api and unsplash api functions
 
+//Unsplash API Call
 function getUnsplash(variablemood){
   let clientID = "5EBER4yF6LOq05pKyvvFhc3yQkLyidB-RSL4FRW0a3c";
   let endpoint = "https://api.unsplash.com/photos/random/?query=" + variablemood + "&client_id=" + clientID;
 
   let imageEl = document.querySelector("#splash-img");
-
+//fetch function
   fetch(endpoint)
     .then(function (response) {
       return response.json();
@@ -52,7 +53,7 @@ function getUnsplash(variablemood){
     })
 }
 
-//LOCAL STORAGE SECTION FOR MOODS
+//local storage function for storing user moods
 document.addEventListener('DOMContentLoaded',function(){
     document.getElementById("genreConfirmButton").addEventListener('click',function(){
         moodStorage();
@@ -68,6 +69,8 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 });
 
+//moodStorage function selects all input types with checkbox
+//sets key items with ids during for loop as keys that are stored in local storage
 function moodStorage() {
     var moodToggles = document.querySelectorAll('input[type=checkbox]');
     for(var i=0; i<moodToggles.length; i++) {
