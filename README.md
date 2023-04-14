@@ -6,7 +6,7 @@
 
 ## Code Learning Points
 
-* 
+* Using third-party CSS frameworks allowed us to really get started on our MVP
 
 ```html 
 
@@ -31,20 +31,16 @@
 | HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)|  
 | CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
 | Git | [https://git-scm.com/](https://git-scm.com/)     |    
-| Js  | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |  
-|Font Awesome|[(https://fontawesome.com/](https://fontawesome.com/)|
+| JavaScript  | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |  
+|Font Awesome|[https://fontawesome.com/](https://fontawesome.com/)|
 |Google Fonts|[https://fonts.google.com/](https://fonts.google.com/)|
 |Cirrus|[https://cirrus-ui.netlify.app/getting-started/setup](https://cirrus-ui.netlify.app/getting-started/setup)|
-||[]()|
-
-
-
+|jQuery|[https://jquery.com/](https://jquery.com/)|
+|Anime.js|[https://animejs.com/](https://animejs.com/)|
 
 ## **Prerequisites**
 
 **Install or open the internet browser of your choice.**
-
-*  **Examples Below:**
 
 - Google Chrome
 - Safari
@@ -56,11 +52,11 @@
 
 Click the link below: 
 
-[ Cheerio 🤗]()
+[ Cheerio 🤗](https://daevidvo.github.io/Cheerio/index.html)
 
-## **Visual**
 
-* click the image below. 
+
+## **Project Pictures**
 
 [![image](./assets/images/main.png)]()
 
@@ -87,7 +83,8 @@ Click the link below:
 
 * [Cirrus Documentation](https://cirrus-ui.netlify.app/docs)
 * [Java Script Documentation](https://devdocs.io/javascript/)
-* [Documentation]()
+* [Anime.js Documentation](https://animejs.com/documentation/)
+* [jQuery Documentation](https://api.jquery.com/)
 
 
 ## **License**
