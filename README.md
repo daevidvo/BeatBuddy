@@ -4,6 +4,10 @@
 
 * Cheerio is a web application that allows users to feel both motivated and inspired through inspirational quotes and visuals. Our web application best captivates users who are looking for words that will represent how they are feeling at that current moment. Cheerio allows users to input how they are currently feeling whether that be calm, optimistic, relaxed, etc and formulates randomized quotes and backgrounds that better captures and materializes into words what a user might be feeling at that time.
 
+Click the link below to visit our live site: 
+
+[ Cheerio 🤗](https://daevidvo.github.io/Cheerio/)
+
 ## Code Learning Points
 
 * 
@@ -52,19 +56,27 @@
 - Mozilla Firefox
 - Internet Explorer
 
-## **Installing**
+## **Usage**
 
-Click the link below: 
+Click the link below to visit our live site: 
 
-[ Cheerio 🤗]()
+[ Cheerio 🤗](https://daevidvo.github.io/Cheerio/)
 
-## **Visual**
-
-* click the image below. 
-
+Here you can see the home page of Cheerio:
 [![image](./assets/images/main.png)]()
 
+Here you can see a screenshot of what a user might select when inputting moods:
+[![image](./assets/images/modalss.png)]()
+
+Here you can see a screenshot of the output a user might see after confirming their mood:
+[![image](./assets/images/outputss.png)]()
+
+After refreshing the site user inputs are saved as seen below:
+[![image](./assets/images/afterrefreshss.png)]()
+
+Here you can see our about us page:
 [![Image](./assets/images/about%20us%20.png)]()
+
 
 ## **Authors**
 
