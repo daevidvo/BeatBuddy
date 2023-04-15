@@ -8,6 +8,26 @@ Click the link below to visit our live site:
 
 [ Cheerio 🤗](https://daevidvo.github.io/Cheerio/)
 
+## **Technology Used**
+
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)|  
+| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
+| Git | [https://git-scm.com/](https://git-scm.com/)     |    
+| JavaScript  | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |  
+|Font Awesome|[https://fontawesome.com/](https://fontawesome.com/)|
+|Google Fonts|[https://fonts.google.com/](https://fonts.google.com/)|
+|Cirrus|[https://cirrus-ui.netlify.app/getting-started/setup](https://cirrus-ui.netlify.app/getting-started/setup)|
+|jQuery|[https://jquery.com/](https://jquery.com/)|
+|Anime.js|[https://animejs.com/](https://animejs.com/)|
+
+## **User Stories**
+
+As a user I want to be able to feel inspired and motivated so that I am able to feel energized and ready to take on the world each day.
+
+As a user I want to see inspirational quotes and images when I input my mood, so that I feel that my emotions are materialized in front of me.
+
 ## Code Learning Points
 
 * Using third-party CSS frameworks allowed us to really get started on our MVP. Through utilizing Cirrus as our CSS framework and parsing through the documentation, we were able to create dynamic and stylish elements in our HTML without the need for external or custom CSS. This was a choice made by our team because we liked the built-in look that came with Cirrus. 
@@ -55,19 +75,7 @@ function getUnsplash(variablemood){
 ```
 
 
-## **Technology Used**
 
-| Technology Used         | Resource URL           | 
-| ------------- |:-------------:| 
-| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)|  
-| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
-| Git | [https://git-scm.com/](https://git-scm.com/)     |    
-| JavaScript  | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)     |  
-|Font Awesome|[https://fontawesome.com/](https://fontawesome.com/)|
-|Google Fonts|[https://fonts.google.com/](https://fonts.google.com/)|
-|Cirrus|[https://cirrus-ui.netlify.app/getting-started/setup](https://cirrus-ui.netlify.app/getting-started/setup)|
-|jQuery|[https://jquery.com/](https://jquery.com/)|
-|Anime.js|[https://animejs.com/](https://animejs.com/)|
 
 ## **Usage**
 
@@ -81,14 +89,30 @@ Here you can see the home page of Cheerio:
 Here you can see a screenshot of what a user might select when inputting moods:
 [![image](./assets/images/modalss.png)]()
 
-Here you can see a screenshot of the output a user might see after confirming their mood:
-[![image](./assets/images/outputss.png)]()
+Here you can see a screenshot of how the Stoic API and Unsplash API work together to allow users to see randomized quotes and images based on their mood inputs:
+(insert gif of inputting mood then random image pop up)
 
 After refreshing the site user inputs are saved as seen below:
 [![image](./assets/images/afterrefreshss.png)]()
 
 Here you can see our about us page:
 [![Image](./assets/images/about%20us%20.png)]()
+
+
+## **Cirrus**
+Cirrus is a modular, responsive, and component centric SCSS framework aimed at bringing not only beautiful, hassle-free styling, but also a better developer experience. Almost all generated styles can be modified via its config style so you can mold the framework to whatever you want.
+
+🎁 Construct your web app or website by composing beautifully designed components.
+🛠 Shipped with utility classes to design with scale.
+📱 Fully responsive by design.
+🎨 Almost fully customizable styles and classes.
+⚡ The only file you need is the minified CSS file from a CDN.
+🌌 Fully open source.
+
+Here you can see a display of Cheerio in different screen sizes:
+(insert gif of varying screen size here)
+
+Link to Cirrus documentation: [https://cirrus-ui.netlify.app/docs](https://cirrus-ui.netlify.app/docs)
 
 
 ## **Authors**
