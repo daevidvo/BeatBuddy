@@ -28,6 +28,8 @@ As a user I want to be able to feel inspired and motivated so that I am able to 
 
 As a user I want to see inspirational quotes and images when I input my mood, so that I feel that my emotions are materialized in front of me.
 
+[![image](./assets/images/usage_example.gif)]()
+
 ## Code Learning Points
 
 * Using third-party CSS frameworks allowed us to really get started on our MVP. Through utilizing Cirrus as our CSS framework and parsing through the documentation, we were able to create dynamic and stylish elements in our HTML without the need for external or custom CSS. This was a choice made by our team because we liked the built-in look that came with Cirrus. 
@@ -84,18 +86,23 @@ Click the link below:
 [ Cheerio 🤗](https://daevidvo.github.io/Cheerio/index.html)
 
 Here you can see the home page of Cheerio:
+<br>
 [![image](./assets/images/main.png)]()
 
 Here you can see a screenshot of what a user might select when inputting moods:
+<br>
 [![image](./assets/images/modalss.png)]()
 
 Here you can see a screenshot of how the Stoic API and Unsplash API work together to allow users to see randomized quotes and images based on their mood inputs:
-(insert gif of inputting mood then random image pop up)
+<br>
+[![image](./assets/images/usage_example.gif)]()
 
 After refreshing the site user inputs are saved as seen below:
+<br>
 [![image](./assets/images/afterrefreshss.png)]()
 
 Here you can see our about us page:
+<br>
 [![Image](./assets/images/about%20us%20.png)]()
 
 
@@ -110,7 +117,8 @@ Cirrus is a modular, responsive, and component centric SCSS framework aimed at b
 🌌 Fully open source.
 
 Here you can see a display of Cheerio in different screen sizes:
-(insert gif of varying screen size here)
+<br>
+[![Image](./assets/images/responsive_ui.gif)]()
 
 Link to Cirrus documentation: [https://cirrus-ui.netlify.app/docs](https://cirrus-ui.netlify.app/docs)
 
